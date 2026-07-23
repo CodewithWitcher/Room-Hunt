@@ -14,6 +14,18 @@ export const SaveRequirementModal: React.FC<SaveRequirementModalProps> = ({ isOp
   const [copiedText, setCopiedText] = useState(false);
   const [copiedPhone, setCopiedPhone] = useState(false);
 
+  // Lock body scroll when modal is open
+  React.useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   // Formatted Full Requirement Text for Copying / Sharing
   const fullRequirementSummaryText = `🏠 FLAT REQUIREMENT SPECIFICATIONS (FOR FAMILY ONLY)
 
@@ -70,7 +82,7 @@ ${siteConfig.preferredLocations.join(", ")}
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-6 overflow-y-auto">
           
           {/* Backdrop Blur Overlay */}
           <motion.div
