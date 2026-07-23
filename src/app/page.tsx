@@ -5,8 +5,9 @@ import { RequirementCards } from "@/components/RequirementCards";
 import { LocationPills } from "@/components/LocationPills";
 import { ContactQRSection } from "@/components/ContactQRSection";
 import { FloatingQuickContact } from "@/components/FloatingQuickContact";
+import { LiquidGlassPopupModal } from "@/components/LiquidGlassPopupModal";
 import { siteConfig } from "@/data/siteConfig";
-import { Heart, Sparkles, Building2, MapPin } from "lucide-react";
+import { Building2 } from "lucide-react";
 
 export default function Home() {
   return (
@@ -63,6 +64,9 @@ export default function Home() {
 
       {/* Sticky Mobile Quick Contact Bar */}
       <FloatingQuickContact />
+
+      {/* 5-Second Automatic Liquid Blur Glass Popup Modal */}
+      <LiquidGlassPopupModal />
     </main>
   );
 }

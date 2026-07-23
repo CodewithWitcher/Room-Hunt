@@ -2,7 +2,7 @@
 
 import React from "react";
 import { siteConfig } from "@/data/siteConfig";
-import { Calendar, MapPin, Phone, MessageSquare, ShieldCheck, ArrowDown, Sparkles } from "lucide-react";
+import { Calendar, MapPin, Phone, MessageSquare, ShieldCheck, ArrowDown, Sparkles, Users, Heart } from "lucide-react";
 import { motion } from "framer-motion";
 
 export const HeroSection: React.FC = () => {
@@ -18,6 +18,12 @@ export const HeroSection: React.FC = () => {
         transition={{ duration: 0.6 }}
         className="flex flex-col items-center text-center max-w-4xl mx-auto"
       >
+        {/* Family Flat Required Callout Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-rose-500/20 via-pink-500/20 to-purple-500/20 border border-rose-500/40 text-rose-300 text-xs sm:text-sm font-extrabold mb-4 shadow-glass animate-pulse">
+          <Users className="w-4 h-4 text-rose-400" />
+          <span>FAMILY FLAT REQUIRED — NOT FOR BACHELORS</span>
+        </div>
+
         {/* Shifting Status Pill */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-pill text-indigo-300 text-xs sm:text-sm font-medium mb-6 shadow-glass">
           <Calendar className="w-4 h-4 text-cyan-400" />
@@ -30,7 +36,7 @@ export const HeroSection: React.FC = () => {
 
         {/* Main Title */}
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight sm:leading-tight">
-          Flat Required Near{" "}
+          Family Flat Required Near{" "}
           <span className="gradient-text-indigo relative inline-block">
             {siteConfig.primaryLocation}
             <span className="absolute bottom-1 left-0 w-full h-[3px] bg-gradient-to-r from-indigo-500 to-cyan-400 rounded-full opacity-80"></span>
@@ -39,11 +45,11 @@ export const HeroSection: React.FC = () => {
 
         {/* Subheading */}
         <p className="text-lg sm:text-xl text-gray-300 mb-6 max-w-2xl font-normal leading-relaxed">
-          Urgent requirement for a clean <strong className="text-indigo-300 font-semibold">1 BHK</strong> or{" "}
-          <strong className="text-cyan-300 font-semibold">2 BHK</strong> flat in Noida with modular kitchen, RO, Geyser, & Almirah.
+          Urgent requirement for a clean <strong className="text-indigo-300 font-semibold">1 BHK (₹6K–₹10K)</strong> or{" "}
+          <strong className="text-cyan-300 font-semibold">2 BHK (₹10K–₹15K)</strong> flat in Noida for <strong className="text-rose-300 font-semibold">family stay (Not for bachelors)</strong>.
         </p>
 
-        {/* Note Box - Custom note required by user */}
+        {/* Note Box */}
         <div className="mb-8 p-4 rounded-xl glass-panel max-w-2xl text-left flex items-start gap-3 border-l-4 border-indigo-500 shadow-glass">
           <Sparkles className="w-5 h-5 text-indigo-400 shrink-0 mt-0.5" />
           <p className="text-xs sm:text-sm text-gray-300 italic">
@@ -55,11 +61,11 @@ export const HeroSection: React.FC = () => {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 w-full max-w-3xl mb-10">
           <div className="p-3.5 rounded-xl glass-panel text-center">
             <span className="block text-xs text-gray-400 font-medium">Budget Range</span>
-            <span className="text-xs sm:text-sm font-bold text-emerald-400">₹8K – ₹15K (Incl. Maint.)</span>
+            <span className="text-xs sm:text-sm font-bold text-emerald-400">₹6K – ₹15K (Incl. Maint.)</span>
           </div>
           <div className="p-3.5 rounded-xl glass-panel text-center">
-            <span className="block text-xs text-gray-400 font-medium">Target Location</span>
-            <span className="text-sm sm:text-base font-bold text-cyan-300">Sec 59 + 15 Hubs</span>
+            <span className="block text-xs text-gray-400 font-medium">Tenant Category</span>
+            <span className="text-xs sm:text-sm font-bold text-rose-300">Family Only</span>
           </div>
           <div className="p-3.5 rounded-xl glass-panel text-center">
             <span className="block text-xs text-gray-400 font-medium">Metro Limit</span>

@@ -37,6 +37,7 @@ export interface SiteConfig {
   whatsappMessage: string;
   bannerMessages: string[];
   minimumRequirementsNote: string;
+  familyNotice: string;
   preferredLocations: string[];
   metroConnectivityNote: string;
   requirements: RequirementSpec[];
@@ -50,17 +51,20 @@ export const siteConfig: SiteConfig = {
   phoneNumber: "+916307922029",
   whatsappNumber: "916307922029",
   email: "contact@flatrequirement.in",
-  whatsappMessage: "Hi! I saw your flat requirement showcase for 1BHK/2BHK near Sector 59, Noida. I have an available option to share.",
+  whatsappMessage: "Hi! I saw your flat requirement showcase for FAMILY FLAT (1BHK/2BHK) near Sector 59, Noida. I have an available option for family.",
   
   bannerMessages: [
-    "⚡ Looking for 1 BHK / 2 BHK Flat near Sector 59, Noida",
+    "👨‍👩‍👧 REQUIRED FOR FAMILY ONLY (NOT FOR BACHELORS)",
+    "⚡ Looking for 1 BHK / 2 BHK Family Flat near Sector 59, Noida",
     "💰 Budget Range: ₹6,000 – ₹15,000 / month (Incl. Maintenance)",
     "📅 Shift Deadline: 15th August 2026 to 23rd August 2026",
     "🚇 Preferred Locations within 5 km of Metro Stations",
-    "📞 Contact immediately via Phone / WhatsApp: +91 6307922029"
+    "📞 Contact Seeker: +91 6307922029"
   ],
 
   minimumRequirementsNote: "If budget is lower, these are the minimum requirements; if budget allows, I can consider extra amenities.",
+  
+  familyNotice: "🏠 FAMILY FLAT REQUIRED — This requirement is strictly for family residence. NOT FOR BACHELORS.",
 
   preferredLocations: [
     "Sector 62",
@@ -85,8 +89,8 @@ export const siteConfig: SiteConfig = {
   requirements: [
     {
       id: "1bhk",
-      title: "1 BHK Requirement",
-      badge: "Compact & Cozy",
+      title: "1 BHK Family Requirement",
+      badge: "Family Flat Only",
       budgetMin: 6000,
       budgetMax: 10000,
       budgetFormatted: "₹6,000 – ₹10,000 / month (Incl. Maintenance)",
@@ -97,6 +101,7 @@ export const siteConfig: SiteConfig = {
       washrooms: 1,
       washroomDetail: "1 Washroom with Geyser fitted",
       keyHighlights: [
+        "👨‍👩‍👧 For Family Stay (Not for Bachelors)",
         "1 Bedroom with wardrobe / almirah",
         "1 Comfortable Hall",
         "Modular Kitchen (RO + Exhaust)",
@@ -150,8 +155,8 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "2bhk",
-      title: "2 BHK Requirement",
-      badge: "Spacious & Ideal",
+      title: "2 BHK Family Requirement",
+      badge: "Spacious Family Home",
       budgetMin: 10000,
       budgetMax: 15000,
       budgetFormatted: "₹10,000 – ₹15,000 / month (Incl. Maintenance)",
@@ -162,6 +167,7 @@ export const siteConfig: SiteConfig = {
       washrooms: 2,
       washroomDetail: "2 Washrooms with Geysers fitted",
       keyHighlights: [
+        "👨‍👩‍👧 For Family Stay (Not for Bachelors)",
         "2 Bedrooms with wardrobes",
         "1 Generous Living Hall",
         "Modular Kitchen (RO + Exhaust)",

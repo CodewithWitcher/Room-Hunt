@@ -22,15 +22,15 @@ export const ContactQRSection: React.FC = () => {
   return (
     <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative z-10">
       <div className="text-center max-w-2xl mx-auto mb-10">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-pill text-xs font-semibold text-emerald-400 mb-3">
-          <Sparkles className="w-3.5 h-3.5" />
-          <span>DIRECT CONTACT</span>
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-500/20 border border-rose-500/40 text-rose-300 text-xs font-extrabold mb-3">
+          <Sparkles className="w-3.5 h-3.5 text-rose-400" />
+          <span>FAMILY FLAT REQUIREMENT — NOT FOR BACHELORS</span>
         </div>
         <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
-          Have a Flat Available? Let&apos;s Connect!
+          Have a Family Flat Available? Let&apos;s Connect!
         </h2>
         <p className="text-gray-400 text-sm mt-2">
-          If you are an owner or direct broker with a matching 1 BHK or 2 BHK near Sector 59, Noida, please reach out via Call or WhatsApp.
+          If you are an owner or direct broker with a matching 1 BHK or 2 BHK family flat near Sector 59, Noida, please reach out via Call or WhatsApp.
         </p>
       </div>
 
