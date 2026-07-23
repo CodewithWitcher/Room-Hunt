@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Flat Required Near Sector 59 Noida | 1 BHK & 2 BHK Showcase",
   description:
-    "Direct flat requirement showcase: Looking for 1 BHK or 2 BHK flat near Sector 59, Noida. Budget ₹8K - ₹15K/month with RO, Geyser, Modular Kitchen, and Almirah. Shifting by August 2026.",
+    "Direct flat requirement showcase: Looking for 1 BHK or 2 BHK flat near Sector 59, Noida. Budget ₹8K - ₹15K/month (including maintenance) with RO, Geyser, Modular Kitchen, and Almirah. Shifting by August 2026.",
   keywords: [
     "Flat required Sector 59 Noida",
     "1 BHK flat near Sector 59 Noida",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Flat Required Near Sector 59 Noida | 1 BHK / 2 BHK",
     description:
-      "Looking for 1 BHK (₹8K-₹11K) or 2 BHK (₹11K-₹15K) near Sector 59, Noida. Shift date 15th-23rd Aug 2026. Contact via WhatsApp / Call.",
+      "Looking for 1 BHK (₹8K-₹11K incl. maintenance) or 2 BHK (₹11K-₹15K incl. maintenance) near Sector 59, Noida. Shift date 15th-23rd Aug 2026. Contact via WhatsApp / Call.",
     type: "website",
     locale: "en_IN",
     siteName: "Noida Flat Requirement Showcase",

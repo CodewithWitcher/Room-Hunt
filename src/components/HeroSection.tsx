@@ -55,7 +55,7 @@ export const HeroSection: React.FC = () => {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 w-full max-w-3xl mb-10">
           <div className="p-3.5 rounded-xl glass-panel text-center">
             <span className="block text-xs text-gray-400 font-medium">Budget Range</span>
-            <span className="text-sm sm:text-base font-bold text-emerald-400">₹8K – ₹15K /mo</span>
+            <span className="text-xs sm:text-sm font-bold text-emerald-400">₹8K – ₹15K (Incl. Maint.)</span>
           </div>
           <div className="p-3.5 rounded-xl glass-panel text-center">
             <span className="block text-xs text-gray-400 font-medium">Target Location</span>
