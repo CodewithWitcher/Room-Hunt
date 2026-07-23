@@ -43,11 +43,11 @@ export const ContactQRSection: React.FC = () => {
               <span className="text-xs font-semibold text-indigo-400 uppercase tracking-wider block mb-1">
                 Primary Contact
               </span>
-              <h3 className="text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
-                <span>{siteConfig.phoneNumber}</span>
+              <h3 className="text-xl sm:text-3xl font-bold text-white flex flex-wrap items-center gap-2 sm:gap-3">
+                <span className="tracking-tight">{siteConfig.phoneNumber}</span>
                 <button
                   onClick={handleCopyPhone}
-                  className="p-2 rounded-xl glass-pill hover:bg-white/20 text-gray-300 hover:text-white transition-all text-xs flex items-center gap-1.5"
+                  className="px-2.5 py-1.5 rounded-xl glass-pill hover:bg-white/20 text-gray-300 hover:text-white transition-all text-xs flex items-center gap-1.5"
                   title="Copy Phone Number"
                 >
                   {copied ? (

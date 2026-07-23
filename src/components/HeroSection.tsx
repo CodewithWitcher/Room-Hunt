@@ -19,23 +19,23 @@ export const HeroSection: React.FC = () => {
         className="flex flex-col items-center text-center max-w-4xl mx-auto"
       >
         {/* Family Flat Required Callout Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-rose-500/20 via-pink-500/20 to-purple-500/20 border border-rose-500/40 text-rose-300 text-xs sm:text-sm font-extrabold mb-4 shadow-glass animate-pulse">
-          <Users className="w-4 h-4 text-rose-400" />
+        <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-gradient-to-r from-rose-500/20 via-pink-500/20 to-purple-500/20 border border-rose-500/40 text-rose-300 text-[10px] sm:text-sm font-extrabold mb-4 shadow-glass animate-pulse text-center max-w-full">
+          <Users className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-rose-400 shrink-0" />
           <span>FAMILY FLAT REQUIRED — NOT FOR BACHELORS</span>
         </div>
 
         {/* Shifting Status Pill */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-pill text-indigo-300 text-xs sm:text-sm font-medium mb-6 shadow-glass">
-          <Calendar className="w-4 h-4 text-cyan-400" />
+        <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full glass-pill text-indigo-300 text-xs sm:text-sm font-medium mb-6 shadow-glass text-center">
+          <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-cyan-400 shrink-0" />
           <span>Expected Shift Window: <strong className="text-white font-bold">{siteConfig.shiftWindow}</strong></span>
-          <span className="flex h-2 w-2 relative">
+          <span className="flex h-2 w-2 relative shrink-0">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
           </span>
         </div>
 
         {/* Main Title */}
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight sm:leading-tight">
+        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-snug sm:leading-tight">
           Family Flat Required Near{" "}
           <span className="gradient-text-indigo relative inline-block">
             {siteConfig.primaryLocation}

@@ -17,15 +17,21 @@ export const LiquidGlassPopupModal: React.FC = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  // Lock body scroll when modal is open to prevent page layout shift on mobile
+  // Lock body scroll with scrollbar padding compensation when modal opens to prevent layout shrink/shift
   useEffect(() => {
     if (isOpen) {
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
       document.body.style.overflow = "hidden";
+      if (scrollbarWidth > 0) {
+        document.body.style.paddingRight = `${scrollbarWidth}px`;
+      }
     } else {
       document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
     }
     return () => {
       document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
     };
   }, [isOpen]);
 

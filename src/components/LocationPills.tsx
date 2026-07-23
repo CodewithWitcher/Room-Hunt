@@ -109,22 +109,22 @@ export const LocationPills: React.FC = () => {
         </div>
 
         {/* Custom Location Submission Box */}
-        <div className="p-6 rounded-2xl glass-panel border border-indigo-500/30 bg-gradient-to-r from-indigo-950/40 via-slate-900/60 to-slate-950/80 shadow-glass mb-6">
-          <div className="flex items-center gap-2 mb-3">
-            <PlusCircle className="w-5 h-5 text-emerald-400" />
-            <h3 className="text-base font-bold text-white">Have a Flat in Another Location / Sector?</h3>
+        <div className="p-4 sm:p-6 rounded-2xl glass-panel border border-indigo-500/30 bg-gradient-to-r from-indigo-950/40 via-slate-900/60 to-slate-950/80 shadow-glass mb-6">
+          <div className="flex items-center gap-2 mb-2.5">
+            <PlusCircle className="w-5 h-5 text-emerald-400 shrink-0" />
+            <h3 className="text-sm sm:text-base font-bold text-white">Have a Flat in Another Location / Sector?</h3>
           </div>
           <p className="text-xs sm:text-sm text-gray-300 mb-4">
-            Enter your flat location below and click <strong>&quot;Confirm & Send via WhatsApp&quot;</strong> to send me a direct pre-filled WhatsApp message with your location!
+            Enter your flat location below and click <strong>&quot;Send via WhatsApp&quot;</strong> to send me a pre-filled message with your option!
           </p>
 
-          <form onSubmit={handleCustomLocationSubmit} className="flex flex-col sm:flex-row items-stretch gap-3">
+          <form onSubmit={handleCustomLocationSubmit} className="flex flex-col sm:flex-row items-stretch gap-2.5 sm:gap-3">
             {/* Flat Type Selector */}
-            <div className="flex items-center gap-1 p-1 rounded-xl glass-panel border border-white/10 shrink-0">
+            <div className="flex items-center justify-center gap-1 p-1 rounded-xl glass-panel border border-white/10 shrink-0 w-full sm:w-auto">
               <button
                 type="button"
                 onClick={() => setSelectedFlatType("1 BHK")}
-                className={`px-3 py-2 rounded-lg text-xs font-bold transition-all ${
+                className={`flex-1 sm:flex-initial px-3.5 py-2 rounded-lg text-xs font-bold transition-all ${
                   selectedFlatType === "1 BHK"
                     ? "bg-indigo-600 text-white shadow-md"
                     : "text-gray-400 hover:text-white"
@@ -135,7 +135,7 @@ export const LocationPills: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setSelectedFlatType("2 BHK")}
-                className={`px-3 py-2 rounded-lg text-xs font-bold transition-all ${
+                className={`flex-1 sm:flex-initial px-3.5 py-2 rounded-lg text-xs font-bold transition-all ${
                   selectedFlatType === "2 BHK"
                     ? "bg-indigo-600 text-white shadow-md"
                     : "text-gray-400 hover:text-white"
@@ -150,29 +150,29 @@ export const LocationPills: React.FC = () => {
               <MapPin className="w-4 h-4 text-gray-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
               <input
                 type="text"
-                placeholder="Enter custom location/sector (e.g. Sector 63, Vasundhara, Gaur City)..."
+                placeholder="Enter sector (e.g. Sec 63, Vasundhara, Indirapuram)..."
                 value={customLocation}
                 onChange={(e) => setCustomLocation(e.target.value)}
                 required
-                className="w-full pl-10 pr-4 py-3 rounded-xl glass-input text-xs sm:text-sm placeholder:text-gray-500 focus:outline-none"
+                className="w-full pl-10 pr-4 py-2.5 sm:py-3 rounded-xl glass-input text-xs sm:text-sm placeholder:text-gray-500 focus:outline-none"
               />
             </div>
 
             {/* Submit WhatsApp Button */}
             <button
               type="submit"
-              className="px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all"
+              className="w-full sm:w-auto px-5 py-2.5 sm:py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all whitespace-nowrap"
             >
-              <Send className="w-4 h-4" />
-              <span>Confirm & Send via WhatsApp</span>
+              <Send className="w-4 h-4 shrink-0" />
+              <span>Send via WhatsApp</span>
             </button>
           </form>
         </div>
 
         {/* Footer Note */}
-        <div className="flex items-center justify-between text-xs text-gray-400 pt-4 border-t border-white/10">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-400 pt-4 border-t border-white/10 text-center sm:text-left">
           <span className="flex items-center gap-1.5">
-            <Check className="w-3.5 h-3.5 text-emerald-400" /> Total 15+ Target Sectors Tagged
+            <Check className="w-3.5 h-3.5 text-emerald-400 shrink-0" /> Total 15+ Target Sectors Tagged
           </span>
           <span className="text-indigo-300 font-medium">Noida / Greater Noida / Indirapuram</span>
         </div>

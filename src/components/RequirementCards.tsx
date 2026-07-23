@@ -31,41 +31,41 @@ export const RequirementCards: React.FC = () => {
         </p>
       </div>
 
-      {/* Tab Filter Control (Mobile & Desktop switcher) */}
-      <div className="flex justify-center mb-10">
-        <div className="p-1.5 rounded-2xl glass-panel inline-flex items-center gap-1 shadow-glass border border-white/10">
+      {/* Tab Filter Control (Mobile & Desktop responsive switcher) */}
+      <div className="w-full flex justify-center mb-8 px-2">
+        <div className="p-1 sm:p-1.5 rounded-xl sm:rounded-2xl glass-panel flex flex-wrap sm:flex-nowrap items-center justify-center gap-1 shadow-glass border border-white/10 w-full max-w-md sm:w-auto">
           <button
             onClick={() => setActiveTab("all")}
-            className={`px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 flex items-center gap-2 ${
+            className={`flex-1 sm:flex-initial px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg sm:rounded-xl text-[11px] sm:text-sm font-semibold transition-all duration-200 flex items-center justify-center gap-1.5 ${
               activeTab === "all"
                 ? "bg-gradient-to-r from-indigo-600 to-indigo-500 text-white shadow-md shadow-indigo-500/30"
                 : "text-gray-400 hover:text-white hover:bg-white/5"
             }`}
           >
-            <LayoutGrid className="w-4 h-4" />
-            <span>Show Both (1 & 2 BHK)</span>
+            <LayoutGrid className="w-3.5 h-3.5 shrink-0" />
+            <span className="whitespace-nowrap">Both (1 & 2 BHK)</span>
           </button>
           <button
             onClick={() => setActiveTab("1bhk")}
-            className={`px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 flex items-center gap-2 ${
+            className={`flex-1 sm:flex-initial px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg sm:rounded-xl text-[11px] sm:text-sm font-semibold transition-all duration-200 flex items-center justify-center gap-1.5 ${
               activeTab === "1bhk"
                 ? "bg-gradient-to-r from-indigo-600 to-indigo-500 text-white shadow-md shadow-indigo-500/30"
                 : "text-gray-400 hover:text-white hover:bg-white/5"
             }`}
           >
-            <Home className="w-4 h-4" />
-            <span>1 BHK Only</span>
+            <Home className="w-3.5 h-3.5 shrink-0" />
+            <span className="whitespace-nowrap">1 BHK Only</span>
           </button>
           <button
             onClick={() => setActiveTab("2bhk")}
-            className={`px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 flex items-center gap-2 ${
+            className={`flex-1 sm:flex-initial px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg sm:rounded-xl text-[11px] sm:text-sm font-semibold transition-all duration-200 flex items-center justify-center gap-1.5 ${
               activeTab === "2bhk"
                 ? "bg-gradient-to-r from-indigo-600 to-indigo-500 text-white shadow-md shadow-indigo-500/30"
                 : "text-gray-400 hover:text-white hover:bg-white/5"
             }`}
           >
-            <Home className="w-4 h-4" />
-            <span>2 BHK Only</span>
+            <Home className="w-3.5 h-3.5 shrink-0" />
+            <span className="whitespace-nowrap">2 BHK Only</span>
           </button>
         </div>
       </div>

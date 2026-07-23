@@ -14,15 +14,21 @@ export const SaveRequirementModal: React.FC<SaveRequirementModalProps> = ({ isOp
   const [copiedText, setCopiedText] = useState(false);
   const [copiedPhone, setCopiedPhone] = useState(false);
 
-  // Lock body scroll when modal is open
+  // Lock body scroll with scrollbar padding compensation when modal opens to prevent layout shrink/shift
   React.useEffect(() => {
     if (isOpen) {
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
       document.body.style.overflow = "hidden";
+      if (scrollbarWidth > 0) {
+        document.body.style.paddingRight = `${scrollbarWidth}px`;
+      }
     } else {
       document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
     }
     return () => {
       document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
     };
   }, [isOpen]);
 

@@ -11,7 +11,7 @@ import { Building2 } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="flex-1 flex flex-col relative z-10 pb-20 sm:pb-12">
+    <main className="flex-1 flex flex-col relative z-10 pb-20 sm:pb-12 w-full max-w-full overflow-x-hidden">
       {/* 1. Header Rolling Banner */}
       <HeaderBanner />
 

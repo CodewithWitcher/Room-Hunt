@@ -40,7 +40,7 @@ export const BudgetScaleBar: React.FC<BudgetScaleBarProps> = ({ item }) => {
       </div>
 
       {/* Interactive Step Slider Controls */}
-      <div className="mb-6 px-2">
+      <div className="mb-6 px-1 sm:px-2">
         <div className="relative flex items-center justify-between my-4">
           {/* Background Connecting Rail */}
           <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 h-1.5 bg-white/10 rounded-full z-0"></div>
@@ -62,12 +62,12 @@ export const BudgetScaleBar: React.FC<BudgetScaleBarProps> = ({ item }) => {
               <button
                 key={idx}
                 onClick={() => setSelectedTierIndex(idx)}
-                className={`relative z-10 flex flex-col items-center group focus:outline-none`}
+                className={`relative z-10 flex flex-col items-center group focus:outline-none min-w-0`}
               >
                 <div
-                  className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center font-bold text-xs transition-all duration-300 ${
+                  className={`w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center font-bold text-[10px] sm:text-xs transition-all duration-300 ${
                     isSelected
-                      ? "bg-gradient-to-r from-emerald-400 to-teal-400 text-gray-950 scale-125 shadow-lg shadow-emerald-500/50 ring-4 ring-emerald-500/30"
+                      ? "bg-gradient-to-r from-emerald-400 to-teal-400 text-gray-950 scale-110 sm:scale-125 shadow-lg shadow-emerald-500/50 ring-2 sm:ring-4 ring-emerald-500/30"
                       : isPassed
                       ? "bg-indigo-500 text-white shadow-md shadow-indigo-500/30"
                       : "bg-gray-800 text-gray-400 border border-white/20 hover:border-white/40"
@@ -76,7 +76,7 @@ export const BudgetScaleBar: React.FC<BudgetScaleBarProps> = ({ item }) => {
                   {idx + 1}
                 </div>
                 <span
-                  className={`mt-2 text-xs font-semibold whitespace-nowrap transition-colors ${
+                  className={`mt-1.5 text-[9px] sm:text-xs font-semibold whitespace-nowrap transition-colors ${
                     isSelected ? "text-emerald-300 font-bold" : "text-gray-400 group-hover:text-gray-200"
                   }`}
                 >
