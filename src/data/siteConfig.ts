@@ -68,6 +68,7 @@ export const siteConfig: SiteConfig = {
 
   preferredLocations: [
     "Sector 62",
+    "Sector 59",
     "Sector 64",
     "Sector 65",
     "Sector 58",
@@ -80,7 +81,9 @@ export const siteConfig: SiteConfig = {
     "Sector 71",
     "Sector 81",
     "Sector 76",
-    "Indrapuram Mamura",
+    "Indrapuram",
+    "Ghaziabad",
+    "Mamura",
     "Bishanpura Khora"
   ],
 
