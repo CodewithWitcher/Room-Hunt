@@ -126,6 +126,15 @@ const RequirementCardItem: React.FC<{ item: RequirementSpec }> = ({ item }) => {
           </span>
         </div>
 
+        {/* Furnishing Preference Banner */}
+        <div className="mb-4 p-3.5 rounded-xl bg-cyan-950/40 border border-cyan-500/30 flex items-start gap-3 shadow-inner">
+          <Sparkles className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" />
+          <p className="text-xs sm:text-sm text-cyan-200 font-medium leading-relaxed">
+            <strong className="text-white font-bold block mb-0.5">Furnishing Type Requirement:</strong>
+            Need a <span className="text-cyan-300 font-bold underline">Raw Flat with Almirah</span> OR a <span className="text-indigo-300 font-bold underline">Semi-Furnished Flat</span>. <span className="text-rose-300 font-semibold">(Do NOT want fully furnished flat)</span>.
+          </p>
+        </div>
+
         {/* Itemized Feature Checklist */}
         <div className="space-y-4 mb-6">
           <div className="flex items-start gap-3.5 p-3 rounded-lg bg-white/5 border border-white/5">
@@ -133,7 +142,7 @@ const RequirementCardItem: React.FC<{ item: RequirementSpec }> = ({ item }) => {
               <BedDouble className="w-4 h-4" />
             </div>
             <div>
-              <span className="text-xs text-gray-400 block font-medium">Bedrooms & Wardrobe</span>
+              <span className="text-xs text-gray-400 block font-medium">Bedrooms & Almirah / Wardrobe</span>
               <span className="text-sm font-semibold text-white">{item.bedroomDetail}</span>
             </div>
           </div>

@@ -36,11 +36,14 @@ export const SaveRequirementModal: React.FC<SaveRequirementModalProps> = ({ isOp
   const fullRequirementSummaryText = `🏠 FLAT REQUIREMENT SPECIFICATIONS (FOR FAMILY ONLY)
 
 👨‍👩‍👧 TENANT TYPE: FOR FAMILY RESIDENCE ONLY (NOT FOR BACHELORS)
+🛋️ FURNISHING REQUIREMENT: Raw Flat with Almirah OR Semi-Furnished Flat
+🚫 NOT REQUIRED: Fully Furnished Flat (Do NOT want fully furnished)
 📍 TARGET LOCATION: Near Sector 59, Noida & Surrounding Hubs (Within 5 km of Metro)
 📅 SHIFT TIMELINE: ${siteConfig.shiftWindow}
 
 ----------------------------------------
 💰 1 BHK FAMILY FLAT REQUIREMENT:
+- Furnishing: Raw Flat with Almirah OR Semi-Furnished (NO Full Furnished)
 - Rent Budget: ₹6,000 – ₹10,000 / month (Incl. Maintenance)
 - 1 Bedroom with fitted Almirah / Wardrobe
 - 1 Comfortable Living Hall
@@ -48,6 +51,7 @@ export const SaveRequirementModal: React.FC<SaveRequirementModalProps> = ({ isOp
 - 1 Washroom fitted with Geyser
 
 💰 2 BHK FAMILY FLAT REQUIREMENT:
+- Furnishing: Raw Flat with Almirahs OR Semi-Furnished (NO Full Furnished)
 - Rent Budget: ₹10,000 – ₹15,000 / month (Incl. Maintenance)
 - 2 Bedrooms with fitted Almirahs
 - 1 Generous Living Hall

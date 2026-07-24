@@ -19,9 +19,16 @@ export const HeroSection: React.FC = () => {
         className="flex flex-col items-center text-center max-w-4xl mx-auto"
       >
         {/* Family Flat Required Callout Badge */}
-        <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-gradient-to-r from-rose-500/20 via-pink-500/20 to-purple-500/20 border border-rose-500/40 text-rose-300 text-[10px] sm:text-sm font-extrabold mb-4 shadow-glass animate-pulse text-center max-w-full">
-          <Users className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-rose-400 shrink-0" />
-          <span>FAMILY FLAT REQUIRED — NOT FOR BACHELORS</span>
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-4">
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-gradient-to-r from-rose-500/20 via-pink-500/20 to-purple-500/20 border border-rose-500/40 text-rose-300 text-[10px] sm:text-xs font-extrabold shadow-glass animate-pulse text-center">
+            <Users className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-rose-400 shrink-0" />
+            <span>FAMILY FLAT REQUIRED — NOT FOR BACHELORS</span>
+          </div>
+
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-cyan-500/20 border border-cyan-500/40 text-cyan-300 text-[10px] sm:text-xs font-extrabold shadow-glass text-center">
+            <Sparkles className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+            <span>RAW + ALMIRAH OR SEMI-FURNISHED ONLY (NO FULLY FURNISHED)</span>
+          </div>
         </div>
 
         {/* Shifting Status Pill */}
@@ -45,8 +52,7 @@ export const HeroSection: React.FC = () => {
 
         {/* Subheading */}
         <p className="text-lg sm:text-xl text-gray-300 mb-6 max-w-2xl font-normal leading-relaxed">
-          Urgent requirement for a clean <strong className="text-indigo-300 font-semibold">1 BHK (₹6K–₹10K)</strong> or{" "}
-          <strong className="text-cyan-300 font-semibold">2 BHK (₹10K–₹15K)</strong> flat in Noida for <strong className="text-rose-300 font-semibold">family stay (Not for bachelors)</strong>.
+          Urgent requirement for a <strong className="text-cyan-300 font-semibold">Raw Flat with Almirah</strong> or <strong className="text-indigo-300 font-semibold">Semi-Furnished</strong> <strong className="text-indigo-300 font-semibold">1 BHK (₹6K–₹10K)</strong> or <strong className="text-cyan-300 font-semibold">2 BHK (₹10K–₹15K)</strong> flat in Noida for <strong className="text-rose-300 font-semibold">family stay</strong>. <span className="text-rose-300 font-semibold underline decoration-rose-500/50">(We do NOT want fully furnished flat)</span>.
         </p>
 
         {/* Note Box */}
@@ -64,18 +70,16 @@ export const HeroSection: React.FC = () => {
             <span className="text-xs sm:text-sm font-bold text-emerald-400">₹6K – ₹15K (Incl. Maint.)</span>
           </div>
           <div className="p-3.5 rounded-xl glass-panel text-center">
+            <span className="block text-xs text-gray-400 font-medium">Furnishing Type</span>
+            <span className="text-xs sm:text-sm font-bold text-cyan-300">Raw + Almirah / Semi</span>
+          </div>
+          <div className="p-3.5 rounded-xl glass-panel text-center">
+            <span className="block text-xs text-gray-400 font-medium">Full Furnished?</span>
+            <span className="text-xs sm:text-sm font-bold text-rose-400">NOT Wanted ❌</span>
+          </div>
+          <div className="p-3.5 rounded-xl glass-panel text-center">
             <span className="block text-xs text-gray-400 font-medium">Tenant Category</span>
             <span className="text-xs sm:text-sm font-bold text-rose-300">Family Only</span>
-          </div>
-          <div className="p-3.5 rounded-xl glass-panel text-center">
-            <span className="block text-xs text-gray-400 font-medium">Metro Limit</span>
-            <span className="text-sm sm:text-base font-bold text-indigo-300">Within 5 KM</span>
-          </div>
-          <div className="p-3.5 rounded-xl glass-panel text-center">
-            <span className="block text-xs text-gray-400 font-medium">Status</span>
-            <span className="text-sm sm:text-base font-bold text-emerald-300 flex items-center justify-center gap-1">
-              <ShieldCheck className="w-4 h-4 text-emerald-400 inline" /> Ready to Shift
-            </span>
           </div>
         </div>
 

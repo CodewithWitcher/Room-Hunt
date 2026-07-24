@@ -40,7 +40,7 @@ export const LiquidGlassPopupModal: React.FC = () => {
   };
 
   const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(
-    "Hi! I saw your flat requirement showcase popup. I have a 1BHK/2BHK room available near Sector 59, Noida. Let's discuss!"
+    "Hi! I saw your flat requirement showcase popup. I have a Raw (with Almirah) / Semi-Furnished 1BHK/2BHK flat available near Sector 59, Noida. Let's discuss!"
   )}`;
 
   return (
@@ -81,11 +81,14 @@ export const LiquidGlassPopupModal: React.FC = () => {
             {/* Inner Scrollable Container */}
             <div className="p-4 sm:p-6 overflow-y-auto custom-scrollbar flex flex-col justify-between flex-1">
               <div>
-                {/* Header Badge */}
-                <div className="pr-8 mb-2.5">
-                  <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-rose-500/20 border border-rose-500/30 text-rose-300 text-[10px] sm:text-xs font-extrabold">
+                {/* Header Badges */}
+                <div className="flex flex-wrap items-center gap-1.5 pr-8 mb-2.5">
+                  <div className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-rose-500/20 border border-rose-500/30 text-rose-300 text-[10px] sm:text-xs font-extrabold">
                     <Sparkles className="w-3 h-3 text-rose-400 shrink-0 animate-pulse" />
-                    <span>FOR FAMILY ONLY (NOT BACHELORS)</span>
+                    <span>FOR FAMILY ONLY</span>
+                  </div>
+                  <div className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 text-[10px] sm:text-xs font-extrabold">
+                    <span>RAW + ALMIRAH / SEMI</span>
                   </div>
                 </div>
 
@@ -96,19 +99,19 @@ export const LiquidGlassPopupModal: React.FC = () => {
 
                 {/* Description */}
                 <p className="text-xs sm:text-sm text-gray-300 mb-4 leading-relaxed">
-                  I am looking for a clean <strong className="text-indigo-300 font-semibold">1 BHK (₹6K-₹10K)</strong> or <strong className="text-cyan-300 font-semibold">2 BHK (₹10K-₹15K)</strong> flat for <strong className="text-rose-300 font-semibold">family stay</strong> with shifting by <strong className="text-emerald-300 font-semibold">August 2026</strong>. If you have an option, let&apos;s connect!
+                  Looking for a <strong className="text-cyan-300 font-semibold">Raw flat with Almirah</strong> or <strong className="text-indigo-300 font-semibold">Semi-Furnished</strong> <strong className="text-indigo-300 font-semibold">1 BHK (₹6K-₹10K)</strong> / <strong className="text-cyan-300 font-semibold">2 BHK (₹10K-₹15K)</strong> flat for <strong className="text-rose-300 font-semibold">family stay</strong>. <span className="text-rose-300 font-semibold underline decoration-rose-500/50">(We do NOT want fully furnished flat)</span>.
                 </p>
 
                 {/* Quick Specs Highlight Box */}
                 <div className="p-2.5 rounded-xl glass-panel border border-white/10 mb-4 grid grid-cols-2 sm:grid-cols-3 gap-2 text-[10px] sm:text-xs text-gray-200">
                   <span className="flex items-center gap-1 font-medium truncate">
-                    <Building2 className="w-3.5 h-3.5 text-cyan-400 shrink-0" /> Sec 59 + 15 Hubs
+                    <Building2 className="w-3.5 h-3.5 text-cyan-400 shrink-0" /> Raw + Almirah / Semi
                   </span>
                   <span className="flex items-center gap-1 font-medium truncate">
                     <Calendar className="w-3.5 h-3.5 text-emerald-400 shrink-0" /> Shift: Aug 2026
                   </span>
                   <span className="flex items-center gap-1 font-medium truncate col-span-2 sm:col-span-1">
-                    <ShieldCheck className="w-3.5 h-3.5 text-indigo-400 shrink-0" /> Ready Family
+                    <ShieldCheck className="w-3.5 h-3.5 text-indigo-400 shrink-0" /> No Full Furnished
                   </span>
                 </div>
               </div>
